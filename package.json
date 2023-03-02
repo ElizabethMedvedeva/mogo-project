@@ -1,0 +1,25 @@
+{
+  "name": "mogo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html – open",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizabethMedvedeva/mogo-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizabethMedvedeva/mogo-project/issues"
+  },
+  "homepage": "https://github.com/ElizabethMedvedeva/mogo-project#readme",
+  "devDependencies": {
+    "less": "^4.1.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}
