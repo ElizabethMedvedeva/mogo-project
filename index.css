@@ -2,6 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #2D3033;
@@ -9,4 +63,82 @@ body {
 .container {
   max-width: 1510px;
   margin: 0 auto;
+}
+.divider {
+  display: block;
+  border-bottom: 4px solid #F38281;
+  width: 170px;
+  margin: 0 auto;
+}
+.service {
+  margin-top: 30px;
+}
+.service__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service__header {
+  margin-top: 42px;
+  margin-bottom: 88px;
+}
+.service__text {
+  margin: 17px 0;
+  text-align: center;
+}
+.service__text h4 {
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.service__title {
+  margin: 19px 0;
+  text-align: center;
+}
+.service__title h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.service__cards {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 37px;
+  row-gap: 48px;
+}
+.cards__card {
+  display: flex;
+}
+.cards__card-image {
+  margin-right: 33px;
+}
+.cards__card-info {
+  padding: 13px 0;
+}
+.card-info__direction h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.card-info___description {
+  max-width: 80px;
+  padding: 18px 18px 18px 0;
+  text-align: center;
+}
+.card-info___description h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }

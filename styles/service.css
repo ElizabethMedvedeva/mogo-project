@@ -1,0 +1,24 @@
+.service {
+  margin-top: 30px;
+}
+.service__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service__header {
+  margin-top: 42px;
+  margin-bottom: 88px;
+}
+.service__text {
+  margin: 17px 0;
+}
+.service__text h4 {
+  font-family: ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
