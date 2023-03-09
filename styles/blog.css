@@ -1,0 +1,91 @@
+.blog {
+  margin-top: 30px;
+}
+.blog__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog__header {
+  margin-top: 84px;
+  margin-bottom: 42px;
+}
+.blog__text {
+  padding: 18px 0;
+  text-align: center;
+}
+.blog__text h4 {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.blog__title {
+  padding: 20px 0;
+  margin-bottom: 24px;
+}
+.blog__title h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.blog__body {
+  display: flex;
+}
+.blog__cards {
+  padding-right: 15px;
+}
+.blog__cards.images img {
+  width: 370px;
+  height: 253px;
+}
+.blog__cards.images ::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid ;
+  clear: both;
+}
+.blog__cards-title {
+  margin-top: 30px;
+  padding: 6px 0;
+}
+.blog__cards-title h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.blog__cards-info {
+  max-width: 369px;
+  padding: 7.5px 0;
+  margin-bottom: 22px;
+}
+.blog__cards-info h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.blog__cards-icons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  max-width: 205px;
+}
+.blog__cards-icons.seen {
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+.blog__cards-icons.comments {
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
