@@ -1,0 +1,96 @@
+.about-banner {
+  &__container {
+    max-width: 100%;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: @glory-element-color;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    @media screen and (max-width: 700px) {
+      grid-template-columns: none;
+      grid-template-areas:
+        "a b"
+        "c d"
+        "e e";
+      :nth-child(1) {
+        grid-area: a;
+      }
+      :nth-child(2) {
+        grid-area: b;
+      }
+      :nth-child(3) {
+        grid-area: c;
+      }
+      :nth-child(4) {
+        grid-area: d;
+      }
+      :nth-child(5) {
+        grid-area: e;
+      }
+    }
+    .department {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid @white-element-color;
+      border-style: hidden groove hidden groove;
+      @media screen and (max-width: 700px) {
+        border-style: hidden hidden groove hidden;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        color: @white-text-color;
+        padding: 0 75px;
+        margin: 87px 0 28px 0;
+        @media screen and (max-width: 1375px) {
+          padding: 0 65px;
+        }
+        @media screen and (max-width: 1220px) {
+          padding: 0 55px;
+        }
+        @media screen and (max-width: 1100px) {
+          padding: 0 50px;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 48px;
+          line-height: 56px;
+          padding: 0 45px;
+          margin: 52px 0 28px 0;
+        }
+        @media screen and (max-width: 870px) {
+          padding: 0 35px;
+        }
+        @media screen and (max-width: 700px) {
+          padding: 0 55px;
+          font-size: 48px;
+          line-height: 56px;
+          margin: 30px 0 28px 0;
+        }
+      }
+      h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: @white-text-color;
+        margin: 0 0 70px 0;
+        @media screen and (max-width: 1024px) {
+          margin: 0 0 34px 0;
+        }
+        @media screen and (max-width: 700px) {
+          margin: 0 0 12px 0;
+        }
+      }
+    }
+  }
+}
