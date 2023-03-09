@@ -1,0 +1,43 @@
+.team-banner{
+    &__container {
+        max-width: 100%;
+      }
+      &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @alabaster-element-color;
+      }
+      &__body {
+        padding: 42px 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        .images{
+           #pattern_1{
+            max-width: 64px;
+            max-height: 71px;
+           }
+           #pattern_2{
+            max-width: 68px;
+            max-height: 80px;
+           }
+           #pattern_3{
+            max-width: 72px;
+            max-height: 67px;
+           }
+           #pattern_4{
+            max-width: 80px;
+            max-height: 80px;
+           }
+           #pattern_5{
+            max-width: 68px;
+            max-height: 67px;
+           }
+           #pattern_6{
+            max-width: 127px;
+            max-height: 127px;
+           }
+        }
+      }
+}
