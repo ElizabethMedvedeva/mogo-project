@@ -1274,7 +1274,7 @@ body {
 @media screen and (max-width: 670px) {
   .work__body-pictures:nth-child(4) #set_4_image {
     display: block;
-    justify-items: stretch;
+    width: 100%;
   }
 }
 .work__body-pictures:nth-child(4)::after {
@@ -1380,7 +1380,6 @@ body {
 }
 @media screen and (max-width: 670px) {
   .work__reviews {
-    padding: 30px 0;
     flex-direction: column;
   }
 }
