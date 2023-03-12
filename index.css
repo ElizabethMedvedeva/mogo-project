@@ -114,7 +114,11 @@ body {
   }
 }
 .header {
-  background-color: black;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 .header .container {
   position: relative;
@@ -160,6 +164,148 @@ body {
 }
 .header__search {
   display: flex;
+}
+.header__burger {
+  display: none;
+  width: 24px;
+  height: 18px;
+  margin-right: 35px;
+}
+.header__mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh + 55px);
+  background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../images/baner_background.png);
+  background-position: center;
+  background-size: cover;
+  transform: translateY(-100%);
+  display: none;
+  transition: all 0.8s ease-out;
+  z-index: 1;
+}
+.header__mobile-menu.header__mobile-menu_active {
+  transform: translateY(0);
+}
+.header__mobile-menu a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  min-width: 280px;
+  min-height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 530px) {
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+    margin: 0;
+    padding: 25px 0 19px 0;
+  }
+  .header__mobile-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.burger {
+  position: relative;
+  margin: 0 auto;
+  padding: 12px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 101;
+}
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: #ffffff;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.burger span:nth-child(even) {
+  left: 50%;
+}
+.burger span:nth-child(odd) {
+  left: 0px;
+}
+.burger span:nth-child(1),
+.burger span:nth-child(2) {
+  top: 0px;
+}
+.burger span:nth-child(3),
+.burger span:nth-child(4) {
+  top: 7.5px;
+}
+.burger span:nth-child(5),
+.burger span:nth-child(6) {
+  top: 15px;
+}
+.burger.open span:nth-child(1),
+.burger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.burger.open span:nth-child(2),
+.burger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.burger.open span:nth-child(1) {
+  left: 2px;
+  top: 4px;
+}
+.burger.open span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: 4px;
+}
+.burger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+.burger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+.burger.open span:nth-child(5) {
+  left: 2px;
+  top: 12px;
+}
+.burger.open span:nth-child(6) {
+  left: calc(50% - 2px);
+  top: 12px;
 }
 .about__wrapper {
   width: 100%;
@@ -237,7 +383,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,7 +499,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     margin: 31px 0;
@@ -379,7 +525,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     margin: 31px 0;
@@ -402,7 +548,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     margin: 31px 0;
@@ -1501,7 +1647,7 @@ body {
   position: absolute;
   top: 190px;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 .team__cards-socials {
   display: none;
@@ -1827,7 +1973,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
