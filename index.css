@@ -141,9 +141,31 @@ body {
   line-height: 21px;
   color: #000000;
 }
+.about__body {
+  margin-bottom: 108px;
+}
 .about__cards {
   display: flex;
   flex-direction: row;
+}
+.about__cards-images:nth-child(1) {
+  display: none;
+}
+.about__cards-images:nth-child(2) {
+  position: relative;
+}
+.about__cards-images:nth-child(2)::after {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+  background-size: cover;
+  background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  opacity: 0.8;
 }
 .about-banner__container {
   max-width: 100%;

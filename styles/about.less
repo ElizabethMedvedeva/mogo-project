@@ -43,9 +43,36 @@
       color: @black-text-color;
     }
   }
-
+&__body{
+    margin-bottom: 108px;
+}
 &__cards{
     display: flex;
     flex-direction: row;
+    &-images:nth-child(1){
+        display: none;
+    }
+    &-images:nth-child(2){
+        position: relative;
+        img{
+            
+        }
+        &::after{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: 1;
+            background-size: cover;
+            background-image: linear-gradient(
+                360deg,
+                rgba(237, 215, 137, 0.9) 0%,
+                rgba(233, 130, 131, 0.9) 100%);
+            opacity: 0.8;
+        }
+    }
 }
 }
