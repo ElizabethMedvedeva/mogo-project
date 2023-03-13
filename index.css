@@ -1755,7 +1755,7 @@ body {
   position: absolute;
   top: 190px;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 .team__cards-socials {
   display: none;
@@ -1822,7 +1822,6 @@ body {
     right: 3px;
   }
   .team__cards-card:first-child .team__cards-socials {
-    max-width: 144px;
     top: 170px;
   }
   .team__cards-nick h4 {
@@ -1839,6 +1838,59 @@ body {
 @media screen and (max-width: 870px) {
   .team__cards-card:first-child .team__cards-socials {
     top: 150px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .team__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team__header {
+    margin-top: 29px;
+  }
+  .team__title {
+    margin-bottom: 21px;
+  }
+  .team__info {
+    padding: 17px 0;
+    margin-bottom: 19px;
+  }
+  .team__body {
+    margin-bottom: 0;
+  }
+  .team__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .team__cards-card {
+    margin: 0 15px;
+  }
+  .team__cards-card:first-child .team__cards-images {
+    position: relative;
+  }
+  .team__cards-card:first-child .team__cards-images::after {
+    display: none;
+  }
+  .team__cards-card:first-child .team__cards-socials {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -42px;
+    max-width: 100%;
+    z-index: 100;
+  }
+  .team__cards-socials {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -42px;
+  }
+  .team__cards-nick {
+    position: relative;
+    top: -35px;
   }
 }
 .team-banner__container {
