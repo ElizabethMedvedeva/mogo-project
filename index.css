@@ -97,6 +97,70 @@ body {
     margin: 0 auto;
   }
 }
+.divider-white {
+  display: block;
+  border-bottom: 4px solid #FFFFFF;
+  width: 170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .divider-white {
+    width: 148px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .divider-white {
+    width: 144px;
+  }
+}
+.header {
+  background-color: black;
+}
+.header .container {
+  position: relative;
+}
+.header__wrapper {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.header__logo {
+  flex-shrink: 0;
+  z-index: 1;
+  padding-top: 15px;
+}
+.header__nav {
+  padding-top: 10px;
+}
+.header__nav .header__list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header__nav .header__list li a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 30px;
+  text-decoration: none;
+}
+.header__nav .header__list li a:hover {
+  color: #F4BF87;
+  text-decoration: underline;
+}
+.header__nav .header__list li img {
+  margin: 0 30px;
+}
+.header__search {
+  display: flex;
+}
 .about__wrapper {
   width: 100%;
   display: flex;
@@ -148,6 +212,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+.about__cards-images {
+  margin: 0 15px;
+}
 .about__cards-images:nth-child(1) {
   display: none;
 }
@@ -158,14 +225,198 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
   content: "";
   z-index: 1;
   background-size: cover;
   background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-  opacity: 0.8;
+}
+.about__cards-images:nth-child(2) .team {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 122px;
+}
+.about__cards-images:nth-child(2) .team h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 36px;
+}
+.about__cards-images:nth-child(3) {
+  position: relative;
+}
+.about__cards-images:nth-child(3) .team {
+  display: none;
+}
+.about__cards-images:nth-child(4) {
+  position: relative;
+}
+.about__cards-images:nth-child(4) .team {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .about__header {
+    margin: 28px 0 41px 0;
+  }
+  .about__text {
+    padding: 16.5px 0;
+  }
+  .about__text h4 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+  }
+  .about__title h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about__info {
+    padding: 33px 0;
+  }
+  .about__info h5 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .about__body {
+    margin-bottom: 59px;
+  }
+  .about__cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__cards-images {
+    margin: 0 9px;
+  }
+  .about__cards-images:nth-child(2) {
+    position: relative;
+  }
+  .about__cards-images:nth-child(2)::after {
+    bottom: 7px;
+    right: 7px;
+  }
+  .about__cards-images:nth-child(2) .team {
+    margin-top: 100px;
+  }
+  .about__cards-images:nth-child(2) .team h5 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 26px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .about__cards-images:nth-child(2) .team {
+    margin-top: 65px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .about__cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+  }
+  .about__cards-images {
+    margin: 16px 0;
+  }
+  .about__cards-images > img:first-child {
+    width: 100%;
+  }
+  .about__cards-images::after {
+    width: 100%;
+    height: 33%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+    background-size: cover;
+    background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  }
+  .about__cards-images:nth-child(1) {
+    display: block;
+    position: relative;
+  }
+  .about__cards-images:nth-child(1) .team {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    margin: 31px 0;
+    padding-left: 18px;
+  }
+  .about__cards-images:nth-child(1) .team h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 36px;
+  }
+  .about__cards-images:nth-child(2) {
+    display: none;
+  }
+  .about__cards-images:nth-child(3) {
+    position: relative;
+  }
+  .about__cards-images:nth-child(3) .team {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    margin: 31px 0;
+    padding-left: 18px;
+  }
+  .about__cards-images:nth-child(3) .team h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 36px;
+  }
+  .about__cards-images:nth-child(4) {
+    position: relative;
+  }
+  .about__cards-images:nth-child(4) .team {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    margin: 31px 0;
+    padding-left: 18px;
+  }
+  .about__cards-images:nth-child(4) .team h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 36px;
+  }
 }
 .about-banner__container {
   max-width: 100%;
@@ -277,6 +528,102 @@ body {
   .about-banner__body .department h5 {
     margin: 0 0 12px 0;
   }
+}
+.banner__container {
+  max-width: 100%;
+}
+.banner__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../images/baner_background.png);
+}
+.banner__header {
+  margin: 114px 0 116px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner__text h2 {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 93px;
+  color: #FFFFFF;
+}
+.banner__title {
+  padding: 9px 0;
+  margin-bottom: 44px;
+}
+.banner__title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 176px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.banner__button {
+  width: 370px;
+  height: 80px;
+  margin-bottom: 116px;
+  margin-top: 72px;
+}
+.banner__button button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 4px solid #FFFFFF;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+.banner__button button:hover {
+  background-color: #FFFFFF;
+  border-color: #F38281;
+  color: #F38281;
+}
+.banner__progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 43px;
+}
+.banner__progress-info {
+  display: flex;
+}
+.banner__progress-info h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.banner__progress-info h5 {
+  padding: 17px 0 0 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.banner .scroll-line {
+  width: 270px;
+  border: 4px solid #FFFFFF;
+  border-style: hidden hidden groove hidden;
 }
 .blog__wrapper {
   width: 100%;
