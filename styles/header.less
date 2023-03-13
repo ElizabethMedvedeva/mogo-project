@@ -1,6 +1,6 @@
 .header {
   background-color: @black-element-color;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 100;
   width: 100%;
@@ -17,12 +17,12 @@
     padding: 0 10px;
   }
   &__logo {
+    margin-top: 48px;
     flex-shrink: 0;
     z-index: 1;
-    padding-top: 15px;
   }
   &__nav {
-    padding-top: 10px;
+    margin-top: 48px;
     .header__list {
       display: flex;
       height: 100%;
@@ -95,7 +95,33 @@
     }
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 1024px) {
+  .header {
+    &__logo {
+      flex-shrink: 0;
+      z-index: 1;
+      margin-top: 28px;
+    }
+    &__nav {
+      margin-top: 28px;
+      .header__list {
+        li {
+          a {
+            font-size: 13px;
+            line-height: 15px;
+            margin: 0 20px;
+            text-decoration: none;
+            img {
+              margin: 0 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
   .header {
     &__nav {
       display: none;
