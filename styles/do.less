@@ -1,0 +1,146 @@
+.do {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__header {
+    margin-top: 42px;
+  }
+  &__text {
+    padding: 18px 0;
+    text-align: center;
+    h4 {
+      font-family: @Kaushan;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+    }
+  }
+  &__title {
+    padding: 19.5px 0;
+    text-align: center;
+    margin-bottom: 24px;
+    h2 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+  }
+  &__info {
+    padding: 38px 20px;
+    text-align: center;
+    margin-bottom: 42px;
+    h5 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: @black-text-color;
+    }
+  }
+  &__body {
+    display: flex;
+    margin-right: 15px;
+    &-image {
+      flex-grow: 1;
+      margin-right: 30px;
+    }
+    &-list {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      &__close:last-child{
+        margin-bottom: 0;
+      }
+      &__header {
+        display: flex;
+        border: 1px solid @silver-element-color;
+        max-width: 570px;
+        max-height: 92px;
+        justify-content: space-between;
+        .sign {
+          display: flex;
+          align-items: center;
+          padding-left: 21px;
+          justify-content: center;
+        }
+        &__title {
+          padding: 32px 0;
+          margin: 0 50px 0 44px;
+          h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+          }
+        }
+        &__arrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 15px;
+        }
+      }
+      &__body {
+        max-width: 570px;
+        border: 1px solid @silver-element-color;
+        border-style: hidden groove groove groove;
+        display: flex;
+        max-height: 163px;
+        margin-bottom: 20px;
+        h4 {
+          padding: 12.5px 0;
+          max-width: 463px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          margin-left: 22px;
+        }
+        img {
+          max-height: 128px;
+          margin: 17px 24px 18px 54px;
+        }
+      }
+      &__close {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid @silver-element-color;
+        max-width: 570px;
+        max-height: 92px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .sign {
+          display: flex;
+          align-items: center;
+          padding-left: 21px;
+          justify-content: center;
+        }
+        &__title {
+          padding: 32px 0;
+          margin: 0 50px 0 44px;
+          h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+          }
+        }
+        &__arrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
