@@ -1483,6 +1483,147 @@ body {
   align-items: center;
   margin-right: 15px;
 }
+.do-banner__container {
+  max-width: 100%;
+  background-color: #F8F8F8;
+}
+.do-banner__wrapper {
+  margin: 114px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.do-banner__reviews {
+  display: flex;
+}
+.do-banner__reviews .arrows-left {
+  padding-top: 120px;
+}
+.do-banner__reviews .diolog {
+  display: flex;
+  flex-direction: row;
+  padding: 42px 0;
+  margin: 0 60px;
+}
+.do-banner__reviews .diolog .avatar {
+  margin-right: 30px;
+}
+.do-banner__reviews .profile h4 {
+  padding: 6px 0;
+  max-width: 770px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #A9AFB1;
+}
+.do-banner__reviews .profile .nickname {
+  display: flex;
+}
+.do-banner__reviews .profile .nickname .divider-small {
+  margin-bottom: 35px;
+  margin-right: 56px;
+}
+.do-banner__reviews .profile .nickname h5 {
+  margin-top: 21px;
+  padding: 5px 0;
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000000;
+}
+.do-banner__reviews .profile .dots {
+  display: none;
+}
+.do-banner__reviews .arrows-right {
+  padding-top: 120px;
+}
+@media screen and (max-width: 1024px) {
+  .do-banner__wrapper {
+    margin-top: 88px;
+  }
+  .do-banner__reviews .arrows-left {
+    padding-top: 83px;
+  }
+  .do-banner__reviews .diolog {
+    padding: 28px 0;
+  }
+  .do-banner__reviews .diolog .avatar {
+    margin-right: 37px;
+  }
+  .do-banner__reviews .profile h4 {
+    padding: 1.5px 0;
+    max-width: 655px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .do-banner__reviews .profile .nickname .divider-small {
+    margin-bottom: 25px;
+    margin-right: 37px;
+  }
+  .do-banner__reviews .profile .nickname h5 {
+    margin-top: 14px;
+    padding: 1px 0;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .do-banner__reviews .arrows-right {
+    padding-top: 83px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .do-banner__reviews .diolog .profile .nickname .divider-small {
+    margin-left: 0px;
+    width: 47.5px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .do-banner__wrapper {
+    margin-top: 29px;
+  }
+  .do-banner__reviews {
+    flex-direction: column;
+  }
+  .do-banner__reviews .arrows-left {
+    display: none;
+  }
+  .do-banner__reviews .diolog {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 0;
+    margin: 0;
+  }
+  .do-banner__reviews .diolog .avatar {
+    display: none;
+  }
+  .do-banner__reviews .diolog .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .do-banner__reviews .diolog .profile h4 {
+    max-width: 288px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 22px 0 14px 0;
+  }
+  .do-banner__reviews .diolog .profile .nickname {
+    display: flex;
+    flex-direction: row;
+  }
+  .do-banner__reviews .diolog .profile .nickname .divider-small {
+    margin-left: -126px;
+  }
+  .do-banner__reviews .diolog .dots {
+    display: block;
+    margin-top: 29px;
+  }
+  .do-banner__reviews .arrows-right {
+    display: none;
+  }
+}
 .footer__body {
   display: flex;
   margin: 72px 15px 0 15px;
@@ -2843,7 +2984,6 @@ body {
   .work__reviews .men .profile h4 {
     padding: 1.5px 0;
     max-width: 655px;
-    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
   }
@@ -2896,7 +3036,6 @@ body {
   .work__reviews .men .profile .nickname h5 {
     margin-top: 14px;
     padding: 1px 0;
-    font-weight: 400;
     font-size: 24px;
     line-height: 35px;
   }
